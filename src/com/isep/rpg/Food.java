@@ -3,7 +3,7 @@ package com.isep.rpg;
 /**
  * Class Food
  */
-public class Food {
+public class Food implements Consumable {
 
   //
   // Fields

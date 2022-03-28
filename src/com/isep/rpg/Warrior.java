@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * Class Warrior
  */
-public class Warrior extends Hero {
+public class Warrior extends SpellCaster {
 
   //
   // Fields
