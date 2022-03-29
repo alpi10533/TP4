@@ -54,8 +54,8 @@ public class EnemyTest extends TestCase {
         Boss bossEnemy = new Boss("bossEnemyTest");
         basicEnemy .deleteLifePoints(10);
         bossEnemy.deleteLifePoints(10);
-        assertEquals(40, basicEnemy.getLifePoints());
-        assertEquals(70, bossEnemy.getLifePoints());
+        Assertions.assertEquals(40, basicEnemy.getLifePoints());
+        Assertions.assertEquals(70, bossEnemy.getLifePoints());
     }
 
 }
