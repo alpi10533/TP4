@@ -1,14 +1,17 @@
-package com.isep.tests;
+package com.isep.rpg;
 
-import com.isep.rpg.Basic;
-import com.isep.rpg.Boss;
-import junit.framework.TestCase;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
 import java.text.MessageFormat;
 import java.time.Duration;
 import java.time.Instant;
 
-public class EnemyTest extends TestCase {
+import static org.junit.jupiter.api.Assertions.*;
+
+class EnemyTest {
 
     private static Instant startedAt;
 
@@ -57,5 +60,6 @@ public class EnemyTest extends TestCase {
         Assertions.assertEquals(40, basicEnemy.getLifePoints());
         Assertions.assertEquals(70, bossEnemy.getLifePoints());
     }
+
 
 }
